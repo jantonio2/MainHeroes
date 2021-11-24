@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { AvengersPage } from './components/heroes/AvengersPage';
 
 export const MainPage = () => {
