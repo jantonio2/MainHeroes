@@ -4,6 +4,8 @@ import { MainPage } from './MainPage';
 import './styles/styles.scss';
 
 ReactDOM.render(
-  <MainPage />,
+  <div className="main-page">
+    <MainPage />
+  </div>,
   document.getElementById('root')
 );
