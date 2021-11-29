@@ -1,0 +1,27 @@
+.heroscreen__container {
+  display: grid;
+  grid-template-areas: "hero   comics";
+  grid-template-columns: 40% 60%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.heroscreen__container-image {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-area: hero;
+}
+
+.heroscreen__container-image img {
+  width: 70%;
+}
+
+.heroscreen__container-comics {
+  display: grid;
+  grid-area: comics;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+

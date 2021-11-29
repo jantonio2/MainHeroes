@@ -8,7 +8,7 @@ export const heroes = [{
   id: 149,
   idMarvel: 1009220,
   name: "Captain America",
-  image: "https://i.ibb.co/cNpFFhn/Hulk.png" 
+  image: "https://i.ibb.co/9T13PCJ/Capitan-America.png" 
 },
 {
   id: 313,
@@ -32,5 +32,7 @@ export const heroes = [{
   id: 659,
   idMarvel: 1009664,
   name: "Thor",
-  image: "https://i.ibb.co/cNpFFhn/Hulk.png"
+  image: "https://i.ibb.co/wNS7xVP/Thor.png"
 }];
+
+// https://i.ibb.co/4ZFvx6F/Recurso-3.png
