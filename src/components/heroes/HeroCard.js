@@ -7,8 +7,8 @@ export const HeroCard = (hero) => {
   const history = useHistory();
 
   const handleHeroClick = () => {
-    history.push(<HeroScreen {...hero} />)
     console.log('Hola');
+    history.push(`/hero/${hero.id}`);
   };
 
   return (
