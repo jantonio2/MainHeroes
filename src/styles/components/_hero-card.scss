@@ -1,10 +1,13 @@
 .hero-card__container {
+  align-items: center;
+  display: flex;
   height: 450px;
-  margin: auto;
+  justify-content: center;
+  margin-bottom: -70px;
   width: 90%;
 }
 
 .hero-card__container img {
-  margin-top: 70px;
-  width: 100%;
+  cursor: pointer;
+  height: 280px;
 }
