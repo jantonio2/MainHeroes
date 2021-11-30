@@ -26,7 +26,7 @@ export const heroes = [{
   id: 346,
   idMarvel: 1009368,
   name: "Iron man",
-  image: "https://i.ibb.co/cNpFFhn/Hulk.png" 
+  image: "https://i.ibb.co/hYy0MtY/Ironman.png" 
 },
 {
   id: 659,
