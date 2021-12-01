@@ -1,0 +1,61 @@
+.comiclist__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-bottom: 16rem;
+  transition: all ease;
+  width: 100%;
+}
+
+.comiccard__container {
+  background: none;
+  box-shadow: none;
+  height: 290px;
+  margin: 1rem;
+  perspective: 150rem;
+  position: relative;
+  width: 220px;
+
+  &:hover .comiccard__container-side.front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover .comiccard__container-side.back {
+    transform: rotateY(0deg);
+  }
+}
+
+.comiccard__container-side {
+  backface-visibility: hidden;
+  border-radius: 15px;
+  color: white;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.8s ease;
+  width: 90%;
+}
+
+.comiccard__container-side img {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.comiccard__container-side.back {
+  padding: 10px;
+  background-color: darken($color: $primary, $amount: 10);
+  transform: rotateY(-180deg);
+}
+
+.comiccard__container-side h3 {
+  font-size: 15px;
+}
+
+.comiccard__container-side p {
+  font-size: 12px;
+}
+
+

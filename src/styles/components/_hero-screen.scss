@@ -3,7 +3,9 @@
   grid-template-areas: "hero   comics";
   grid-template-columns: 40% 60%;
   height: 100%;
-  position: absolute;
+  margin-top: 50px;
+  overflow: hidden;
+  position: fixed;
   width: 100%;
 }
 
@@ -12,16 +14,52 @@
   display: flex;
   flex-direction: column;
   grid-area: hero;
-}
-
-.heroscreen__container-image img {
-  width: 70%;
+  position: relative;
 }
 
 .heroscreen__container-comics {
-  display: grid;
   grid-area: comics;
-  grid-template-columns: auto auto auto;
   width: 100%;
+}
+
+.heroscreen__container-card {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
+  height: 612px;
+  position: relative;
+  width: 432px;
+}
+
+.heroscreen__container-card img {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.heroscreen__container-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+  padding: 0.4em 1.5em;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(35px);
+  border-radius: 10px;
+  transform: scale(0.9);
+  color: rgb(221, 221, 226);
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+  overflow: hidden;
+  transition: all .4s;
+}
+
+.heroscreen__container-content p {
+  font-size: 1em;
+}
+
+.heroscreen__container-card:hover .heroscreen__container-content {
+  height: 306px;
 }
 

@@ -17,7 +17,7 @@ export const HeroHeader = () => {
         onClick={handleHome}  
       />
       <figure className="title">
-      <img src="https://i.ibb.co/sCZ9KgW/T-tulo.png" alt="TItulo" border="0" />
+        <img src="https://i.ibb.co/hRN9Nms/titulo.png" alt="titulo" border="0" />
       </figure>
     </div>
   );
