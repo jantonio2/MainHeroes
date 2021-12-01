@@ -12,7 +12,10 @@ export const HeroCard = (hero) => {
 
   return (
     <div className="hero-card__container">
-      <img src={hero.image} alt="HeroImg" onClick={handleHeroClick} />
+      <div>
+        <img src={hero.image} alt="HeroImg" onClick={handleHeroClick} />
+      </div>
+      <h3>{hero.name}</h3>
     </div>
   );
 };

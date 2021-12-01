@@ -1,13 +1,47 @@
 .hero-card__container {
   align-items: center;
+  background: darken($color: $primary, $amount: 10);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+  cursor: pointer;
   display: flex;
   height: 450px;
   justify-content: center;
-  margin-bottom: -70px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
   width: 90%;
 }
 
-.hero-card__container img {
-  cursor: pointer;
-  height: 280px;
+.hero-card__container div {
+  height: 100%;
+  width: 100%;
 }
+
+.hero-card__container div img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+  height: 100%;
+  transform-origin: top;
+  transition: transform .4s;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-card__container:hover div img {
+  transform: scale(0.8) translateY(10px);
+}
+
+.hero-card__container h3 {
+  bottom: -18px;
+  left: 50%;
+  color: rgb(195, 186, 186);
+  position: absolute;
+  transform: translate(-50%, 20px);
+  transition: all ease;
+}
+
+.hero-card__container:hover h3 {
+  transform: translate(-50%, -20px);
+  transition-delay: .2s;
+} 
