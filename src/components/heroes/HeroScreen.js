@@ -32,7 +32,7 @@ export const HeroScreen = () => {
   return (
     <div>
       <HeroHeader />
-      <div className="heroscreen__container">
+      <div className="heroscreen__container animate__animated animate__fadeIn">
         <div className="heroscreen__container-image">
           <div className="heroscreen__container-card">
             <img src={`${thumb.path}.${thumb.extension}`} alt="Hero" />

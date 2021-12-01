@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ComicCard = ({ thumbnail, title, description }) => {
+export const ComicCard = ({ thumbnail, title, description, urls }) => {
   return (
     <div className="comiccard__container">
       <div className="comiccard__container-side front">
@@ -10,6 +10,8 @@ export const ComicCard = ({ thumbnail, title, description }) => {
         <h3>{title}</h3>
         <br />
         <p>{description}</p>
+        <br />
+        <a href={urls[0].url} target="_blank" rel="noreferrer" alt="link">{urls[0].url}</a>
       </div>
     </div>
   );

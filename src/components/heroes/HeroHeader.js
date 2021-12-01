@@ -11,7 +11,8 @@ export const HeroHeader = () => {
   return (
     <div className="header">
       <img 
-        src="https://i.ibb.co/WPTNVFT/Logo-Marvel.png" 
+        src="https://i.ibb.co/WPTNVFT/Logo-Marvel.png"
+        className="icono" 
         alt="Logo-Marvel" 
         border="0" 
         onClick={handleHome}  
